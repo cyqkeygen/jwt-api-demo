@@ -1,13 +1,15 @@
 'use stict';
 
+// add dependencies
 const http = require('http');
 const express = require('express');
+
 const app = express();
 
-const server = http.createServer(app);
+// set routes
+const router = require('./routes');
+app.use('/api', router);
 
-app.get('/', function(req, res, next) {
-    res.send('hello world');
-});
+const server = http.createServer(app);
 
 server.listen(3000);
