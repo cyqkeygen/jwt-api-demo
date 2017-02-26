@@ -1,0 +1,22 @@
+{
+    "development": {
+        "host": "127.0.0.1",
+        "port": "27017",
+        "collection": "jwt-api-demo",
+        "dialect": "mongodb"
+    },
+    "production": {
+        "host": "127.0.0.1",
+        "port": "27017",
+        "username": "jwt-api",
+        "password": "jwt-api-password",
+        "collection": "jwt-api-demo",
+        "dialect": "mongodb"
+    },
+    "test": {
+        "host": "127.0.0.1",
+        "port": "27017",
+        "collection": "jwt-api-demo-test",
+        "dialect": "mongodb"
+    }
+}
