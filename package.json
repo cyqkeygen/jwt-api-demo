@@ -17,7 +17,9 @@
     "mocha": "^3.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "tdd": "mocha --color --watch --recursive test --report spec",
+    "cover": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
